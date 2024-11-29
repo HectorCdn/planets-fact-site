@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    font-family: "League Spartan";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: none;
+}
+
+body {
+    background-color: #070724;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.ThePlanet {
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ThPla {
+    font-family: "Antonio";
+    font-size: 20px;
+}
+
+.groupe {
+    background: center / cover url("Group.svg");
+    height: 17px;
+    width: 24px;
+}
+
+hr {
+    background-color: gray;
+    height: 1px;
+}
+
+.navMobile {
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.class {
+    font-size: 12px;
+    color: grey;
+}
+
+.class:hover {
+    color: white;
+    text-decoration: underline 3px #6D2ED5;
+}
+
+.back {
+    padding: 0px 24px;
+    padding-top: 60px;
+    height: 100%;
+    width: 100%;
+}
+
+.part1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.part1_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    background: center / cover url("planet.svg");
+    height: 173px;
+    width: 173px;
+}
+
+.part1_2 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px 0px;
+}
+
+.part1_2_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Antonio";
+    width: max-content;
+    font-weight: 400;
+}
+
+.lore {
+    font-size: 11px;
+    font-family: "League Spartan";
+    color: lightgray;
+}
+
+.source {
+    color: grey;
+    font-size: 10px;
+    display: flex;
+}
+
+span {
+    text-decoration: underline 1px;
+    font-weight: bold;
+}
+
+.part2 {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0px;
+}
+
+.buttonStats {
+    padding: 10px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: solid grey 1px;
+}
+
+.nameStats {
+    font-size: 10px;
+    color: grey;
+    font-family: "League Spartan";
+}
+
+.stats {
+    font-family: "Antonio";
+    font-size: 24px;
+}
+
+.hr3 {
+    display: none;
+}
+
+.button {
+    display: none;
+}
+
+
+
+@media screen and (min-width : 480px) {
+    .navMobile {
+        display: none;
+    }
+
+    .hr2 {
+        display: none;
+    }
+
+    .hr1 {
+        display: none;
+    }
+
+    .hr3 {
+        display: flex;
+    }
+
+    .ThePlanet {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .groupe {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        padding: 20px 50px;
+        font-size: 14px;
+        color: lightgrey;
+    }
+
+    ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    h1 {
+        margin-bottom: 18px;
+    }
+
+    .lore {
+        margin-bottom: 18px;
+        width: 80%;
+        line-height: 20px;
+    }
+
+    .button {
+        display: flex;
+        padding-top: 8px;
+        height: 25%;
+        padding-bottom: 8px;
+        padding-left: 20px;
+        gap: 0px 12px;
+        border: solid grey 1px;
+        align-items: center;
+        font-size: 14px;
+        letter-spacing: 1.93px;
+    }
+
+    .button:hover {
+        background-color: #6D2ED5;
+        border: solid #6D2ED5 1px;
+    }
+
+    .number {
+        color: grey;
+    }
+
+    .part1_2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .part1_2_1 {
+        width: 50%;
+        align-items: flex-start;
+    }
+
+    .part1_2_2 {
+        width: 50%;
+        gap: 10px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .part2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .buttonStats {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+    }
+}
+
+@media screen and (min-width : 1024px) {
+    
+}
